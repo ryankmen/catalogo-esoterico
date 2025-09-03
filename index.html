@@ -3,305 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mily Muñoz - Tarot y Magia</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      scroll-behavior: smooth;
-      font-size: 1.2rem;
-      background: #fff;
-      color: #000;
-    }
-    header {
-      background: #fff;
-      color: #6a0dad;
-      text-align: center;
-      padding: 4rem 2rem 2rem 2rem;
-    }
-    header img {
-      width: 150px;
-      margin-bottom: 1rem;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 4rem;
-      font-family: 'Playfair Display', serif;
-      font-weight: bold;
-      color: #6a0dad;
-    }
-    header p {
-      font-size: 1.6rem;
-      color: #000;
-    }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #fff;
-      padding: 1.2rem 2rem;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      border-bottom: 2px solid #d4af37;
-    }
-    .nav-left {
-      display: flex;
-      align-items: center;
-      gap: 0.8rem;
-    }
-    .nav-left img {
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-    }
-    .nav-left span {
-      color: #6a0dad;
-      font-family: 'Playfair Display', serif;
-      font-weight: bold;
-      font-size: 1.3rem;
-    }
-    .nav-links {
-      display: flex;
-      gap: 2rem;
-    }
-    .nav-links a {
-      background: #fff;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-      color: #d4af37;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.2rem;
-      transition: all 0.3s;
-    }
-    .nav-links a:hover {
-      background: #d4af37;
-      color: #000;
-    }
-    section {
-      padding: 6rem 2rem;
-      max-width: 1200px;
-      margin: auto;
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 1s ease, transform 1s ease;
-    }
-    section.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    h2 {
-      border-bottom: 3px solid #d4af37;
-      display: inline-block;
-      padding-bottom: 0.5rem;
-      margin-bottom: 2.5rem;
-      font-size: 2.5rem;
-      font-family: 'Playfair Display', serif;
-      color: inherit;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-    }
-    .item {
-      border: 2px solid #d4af37;
-      border-radius: 12px;
-      background: #fafafa;
-      padding: 2rem;
-      text-align: center;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .item:hover {
-      transform: scale(1.08);
-      box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
-    }
-    .item img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-      background: #eee;
-    }
-    footer {
-      background: #fff;
-      color: #6a0dad;
-      text-align: center;
-      padding: 2rem;
-      margin-top: 2rem;
-      font-size: 1.2rem;
-      border-top: 2px solid #d4af37;
-    }
-    .agenda {
-      border: 2px solid #d4af37;
-      padding: 2rem;
-      border-radius: 12px;
-      text-align: center;
-      font-size: 1.2rem;
-      background: #fafafa;
-      max-width: 600px;
-      margin: auto;
-    }
-    input {
-      display: block;
-      width: 100%;
-      margin: 1rem 0;
-      padding: 0.8rem;
-      border-radius: 6px;
-      border: 2px solid #d4af37;
-      font-size: 1rem;
-    }
-    button {
-      background: #fff;
-      color: #d4af37;
-      border: 2px solid #d4af37;
-      padding: 1rem 2rem;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 1.2rem;
-      font-weight: bold;
-      transition: transform 0.2s, background 0.3s, color 0.3s;
-    }
-    button:hover {
-      background: #d4af37;
-      color: #000;
-      transform: scale(1.08);
-    }
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <title>Catálogo Esotérico - Mily Muñoz</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <img src="assets/logo.png" alt="Logo Mily Muñoz">
     <h1>Mily Muñoz</h1>
     <p>Magia, Energía y Crecimiento Personal</p>
   </header>
 
   <nav>
-    <div class="nav-left">
-      <img src="assets/logo.png" alt="Logo pequeño">
-      <span>Mily Muñoz</span>
-    </div>
-    <div class="nav-links">
-      <a href="#home">Inicio</a>
-      <a href="#about">Sobre mí</a>
-      <a href="#services">Servicios</a>
-      <a href="#products">Productos</a>
-      <a href="#agenda">Agenda</a>
-      <a href="#contact">Contacto</a>
-    </div>
+    <a href="#home">Inicio</a>
+    <a href="#about">Sobre mí</a>
+    <a href="#services">Servicios</a>
+    <a href="#products">Productos</a>
+    <a href="#agenda">Agenda</a>
+    <a href="#contact">Contacto</a>
   </nav>
 
   <section id="home">
     <h2>Bienvenida</h2>
-    <p>Bienvenido a este espacio sagrado donde la magia y la energía se unen para guiarte hacia tu paz interior. Aquí encontrarás un refugio para tu espíritu, un lugar donde podrás descubrir respuestas, claridad y armonía. Que cada palabra, cada lectura y cada ritual sean una chispa de luz que active en ti la serenidad, la confianza y el poder para transformar tu vida.</p>
+    <p>Bienvenido a este espacio sagrado donde la magia y la energía se unen...</p>
   </section>
 
   <section id="about">
     <h2>¿Quién es Mily?</h2>
-    <div style="display:flex; align-items:center; gap:2rem;">
-      <img src="imagenes/mily" alt="Foto de Mily" style="width:200px; height:auto; border-radius:12px;">
-      <p>
-        Soy <strong>Mily Muñoz</strong>, una mujer apasionada por la magia, la espiritualidad y el poder de la energía universal. Desde los 9 años descubrí que existía algo más grande que nos guía y nos conecta: la fuerza de Dios y del universo.<br><br>
-        Durante más de 30 años he leído las cartas españolas y el tarot, practicando la magia blanca y verde con amor, respeto y fe. Mi camino ha estado acompañado de formación académica y espiritual: soy profesional en Administración de Empresas, con estudios en Hipnosis Clínica, Inteligencia Emocional, Coaching, Manejo del Duelo y otras áreas que me permiten acompañar a las personas en sus procesos de transformación con responsabilidad y conocimiento.<br><br>
-        Hoy mi misión es ayudarte a activar tu energía, descubrir tu poder interior y abrir caminos hacia el bienestar, la abundancia y el crecimiento personal.
-      </p>
-    </div>
+    <img src="imagenes/mily.png" alt="Mily Muñoz" class="foto-mily">
+    <p>[Biografía aquí]</p>
   </section>
 
   <section id="services">
     <h2>Servicios</h2>
     <div class="grid">
-      <div class="item"><img src="imagenes/Servicio1.jpg" alt="Servicio1"><h3>Manilla energetica</h3><h3>Precio: 45.000</h3></div>
-      <div class="item"><img src="imagenes/Servicio2.jpg" alt="Servicio2"><h3>Servicio 2</h3></div>
-      <div class="item"><img src="imagenes/Servicio3.jpg" alt="Servicio3"><h3>Servicio 3</h3></div>
-      <div class="item"><img src="imagenes/Servicio4.jpg" alt="Servicio4"><h3>Servicio 4</h3></div>
-      <div class="item"><img src="imagenes/Servicio5.jpg" alt="Servicio5"><h3>Servicio 5</h3></div>
-      <div class="item"><img src="imagenes/Servicio6.jpg" alt="Servicio6"><h3>Servicio 6</h3></div>
+      <div class="item"><img src="imagenes/Servicio1.png" alt="Servicio1"><h3>Servicio 1</h3></div>
+      <div class="item"><img src="imagenes/Servicio2.png" alt="Servicio2"><h3>Servicio 2</h3></div>
+      <div class="item"><img src="imagenes/Servicio3.png" alt="Servicio3"><h3>Servicio 3</h3></div>
+      <div class="item"><img src="imagenes/Servicio4.png" alt="Servicio4"><h3>Servicio 4</h3></div>
+      <div class="item"><img src="imagenes/Servicio5.png" alt="Servicio5"><h3>Servicio 5</h3></div>
+      <div class="item"><img src="imagenes/Servicio6.png" alt="Servicio6"><h3>Servicio 6</h3></div>
     </div>
   </section>
 
   <section id="products">
-    <h2>Productos Energéticos</h2>
+    <h2>Productos</h2>
     <div class="grid">
-      <div class="item"><img src="imagenes/Producto1.jpg" alt="Producto1"><h3>Producto 1</h3></div>
-      <div class="item"><img src="imagenes/Producto2.jpg" alt="Producto2"><h3>Producto 2</h3></div>
-      <div class="item"><img src="imagenes/Producto3.jpg" alt="Producto3"><h3>Producto 3</h3></div>
-      <div class="item"><img src="imagenes/Producto4.jpg" alt="Producto4"><h3>Producto 4</h3></div>
-      <div class="item"><img src="imagenes/Producto5.jpg" alt="Producto5"><h3>Producto 5</h3></div>
-      <div class="item"><img src="imagenes/Producto6.jpg" alt="Producto6"><h3>Producto 6</h3></div>
-      <div class="item"><img src="imagenes/Producto7.jpg" alt="Producto7"><h3>Producto 7</h3></div>
-      <div class="item"><img src="imagenes/Producto8.jpg" alt="Producto8"><h3>Producto 8</h3></div>
-      <div class="item"><img src="imagenes/Producto9.jpg" alt="Producto9"><h3>Producto 9</h3></div>
+      <div class="item"><img src="imagenes/Producto1.png" alt="Producto1"><h3>Producto 1</h3></div>
+      <div class="item"><img src="imagenes/Producto2.png" alt="Producto2"><h3>Producto 2</h3></div>
+      <div class="item"><img src="imagenes/Producto3.png" alt="Producto3"><h3>Producto 3</h3></div>
+      <div class="item"><img src="imagenes/Producto4.png" alt="Producto4"><h3>Producto 4</h3></div>
+      <div class="item"><img src="imagenes/Producto5.png" alt="Producto5"><h3>Producto 5</h3></div>
+      <div class="item"><img src="imagenes/Producto6.png" alt="Producto6"><h3>Producto 6</h3></div>
+      <div class="item"><img src="imagenes/Producto7.png" alt="Producto7"><h3>Producto 7</h3></div>
+      <div class="item"><img src="imagenes/Producto8.png" alt="Producto8"><h3>Producto 8</h3></div>
+      <div class="item"><img src="imagenes/Producto9.png" alt="Producto9"><h3>Producto 9</h3></div>
     </div>
   </section>
 
   <section id="agenda">
     <h2>Agenda tu Cita</h2>
-    <div class="agenda">
-      <form id="citaForm">
-        <input type="text" id="nombre" placeholder="Tu nombre" required>
-        <input type="pais" id="pais" placeholder="País donde vives" required>
-        <input type="tel" id="telefono" placeholder="Tu número de celular" required>
-        <button type="submit">Registrar Cita</button>
-      </form>
-    </div>
+    <form id="citaForm">
+      <input type="text" id="nombre" placeholder="Tu nombre" required>
+      <input type="email" id="correo" placeholder="Tu correo" required>
+      <input type="tel" id="telefono" placeholder="Tu número de celular" required>
+      <input type="date" id="fecha" required>
+      <input type="time" id="hora" required>
+      <button type="submit">Registrar Cita</button>
+    </form>
   </section>
 
   <section id="contact">
     <h2>Contacto</h2>
     <p>📲 WhatsApp: <a href="https://wa.me/573202301202" target="_blank">+57 320 2301202</a></p>
     <p>📧 Correo: <a href="mailto:paypal@milymunoz">paypal@milymunoz</a></p>
-    <p>💫 TikTok: @tuusuario</p>
   </section>
 
   <footer>
-    <p>“La magia no está fuera de ti, está dentro de ti. Yo solo te acompaño a encenderla.”</p>
     <p>&copy; 2025 Mily Muñoz</p>
   </footer>
 
-  <script>
-    // Animación al hacer scroll
-    const sections = document.querySelectorAll('section');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting){
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.2 });
-
-    sections.forEach(sec => observer.observe(sec));
-
-    // Envío a WhatsApp al registrar cita
-    document.getElementById('citaForm').addEventListener('submit', function(e){
-      e.preventDefault();
-      const nombre = document.getElementById('nombre').value;
-      const correo = document.getElementById('correo').value;
-      const telefono = document.getElementById('telefono').value;
-      const mensaje = `Hola, soy ${nombre}. Mi correo es ${correo} y mi número es ${telefono}. Quiero registrar una cita.`;
-      window.open(`https://wa.me/573202301202?text=${encodeURIComponent(mensaje)}`, '_blank');
-    });
-
-    // Animación suave al hacer clic en los enlaces del menú
-    document.querySelectorAll('nav a').forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault();
-        const targetId = link.getAttribute('href').substring(1);
-        const target = document.getElementById(targetId);
-        target.scrollIntoView({ behavior: 'smooth' });
-        target.classList.add('visible');
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
