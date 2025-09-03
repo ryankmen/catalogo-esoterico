@@ -1,84 +1,123 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo Esotérico - Mily Muñoz</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Mily Muñoz — Tarot, Magia y Crecimiento</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Mily Muñoz</h1>
-    <p>Magia, Energía y Crecimiento Personal</p>
+  <header class="site-header">
+    <div class="header-inner">
+      <img src="assets/logo.png" alt="Logo Mily" class="logo-large">
+      <div class="title-area">
+        <h1 class="site-title">Mily Muñoz</h1>
+        <p class="site-tag">Magia, Energía y Crecimiento Personal</p>
+      </div>
+    </div>
   </header>
 
-  <nav>
-    <a href="#home">Inicio</a>
-    <a href="#about">Sobre mí</a>
-    <a href="#services">Servicios</a>
-    <a href="#products">Productos</a>
-    <a href="#agenda">Agenda</a>
-    <a href="#contact">Contacto</a>
+  <nav class="main-nav" role="navigation">
+    <div class="nav-left">
+      <img src="assets/logo.png" alt="logo" class="logo-small">
+      <span class="brand">Mily Muñoz</span>
+    </div>
+    <div class="nav-links">
+      <a class="nav-link" href="#home">Inicio</a>
+      <a class="nav-link" href="#about">Sobre mí</a>
+      <a class="nav-link" href="#services">Servicios</a>
+      <a class="nav-link" href="#products">Productos</a>
+      <a class="nav-link" href="#agenda">Agenda</a>
+      <a class="nav-link" href="#contact">Contacto</a>
+    </div>
   </nav>
 
-  <section id="home">
-    <h2>Bienvenida</h2>
-    <p>Bienvenido a este espacio sagrado donde la magia y la energía se unen...</p>
-  </section>
+  <main>
+    <section id="home" class="panel">
+      <div class="container">
+        <h2 class="panel-title">Bienvenida</h2>
+        <p class="lead">Bienvenido a este santuario de luz donde la energía, la fe y la intención se unen. Respira, relájate y deja que la guía te muestre el camino. Aquí encontrarás lecturas honestas, rituales responsables y acompañamiento para tu crecimiento.</p>
+      </div>
+    </section>
 
-  <section id="about">
-    <h2>¿Quién es Mily?</h2>
-    <img src="imagenes/mily.png" alt="Mily Muñoz" class="foto-mily">
-    <p>[Biografía aquí]</p>
-  </section>
+    <section id="about" class="panel">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img src="imagenes/mily.png" alt="Foto Mily" id="fotoMily">
+        </div>
+        <div class="about-text">
+          <h2 class="panel-title">¿Quién es Mily?</h2>
+          <p>Soy <strong>Mily Muñoz</strong>, una mujer apasionada por la magia, la espiritualidad y el poder de la energía universal. Desde los 9 años descubrí que existía algo más grande que nos guía y nos conecta: la fuerza de Dios y del universo.</p>
+          <p>Durante más de 30 años he leído las cartas españolas y el tarot, practicando la magia blanca y verde con amor, respeto y fe. Mi camino ha estado acompañado de formación académica y espiritual: soy profesional en Administración de Empresas, con estudios en Hipnosis Clínica, Inteligencia Emocional, Coaching, Manejo del Duelo y otras áreas que me permiten acompañar a las personas en sus procesos de transformación con responsabilidad y conocimiento.</p>
+          <p>Hoy mi misión es ayudarte a activar tu energía, descubrir tu poder interior y abrir caminos hacia el bienestar, la abundancia y el crecimiento personal.</p>
+        </div>
+      </div>
+    </section>
 
-  <section id="services">
-    <h2>Servicios</h2>
-    <div class="grid">
-      <div class="item"><img src="imagenes/Servicio1.png" alt="Servicio1"><h3>Servicio 1</h3></div>
-      <div class="item"><img src="imagenes/Servicio2.png" alt="Servicio2"><h3>Servicio 2</h3></div>
-      <div class="item"><img src="imagenes/Servicio3.png" alt="Servicio3"><h3>Servicio 3</h3></div>
-      <div class="item"><img src="imagenes/Servicio4.png" alt="Servicio4"><h3>Servicio 4</h3></div>
-      <div class="item"><img src="imagenes/Servicio5.png" alt="Servicio5"><h3>Servicio 5</h3></div>
-      <div class="item"><img src="imagenes/Servicio6.png" alt="Servicio6"><h3>Servicio 6</h3></div>
+    <section id="services" class="panel">
+      <div class="container">
+        <h2 class="panel-title">Servicios</h2>
+        <div class="card-grid" id="servicesGrid">
+          <!-- Service items rendered by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="panel">
+      <div class="container">
+        <h2 class="panel-title">Productos</h2>
+        <div class="card-grid" id="productsGrid">
+          <!-- Product items rendered by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <section id="agenda" class="panel">
+      <div class="container">
+        <h2 class="panel-title">Registrar cita</h2>
+        <div class="agenda-card">
+          <form id="citaForm">
+            <div class="form-row"><label>Nombre</label><input id="nombre" required></div>
+            <div class="form-row"><label>Correo</label><input id="correo" type="email" required></div>
+            <div class="form-row"><label>Teléfono</label><input id="telefono" required></div>
+            <div class="form-row"><label>Fecha</label><input id="fecha" type="date" required></div>
+            <div class="form-row"><label>Hora</label><input id="hora" type="time" required></div>
+            <div class="form-actions"><button class="btn" type="submit">Registrar cita</button></div>
+            <p class="hint">Al enviar recibiremos tu solicitud y te confirmaremos por WhatsApp o correo.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="panel">
+      <div class="container">
+        <h2 class="panel-title">Contacto</h2>
+        <p>📲 WhatsApp: <a href="https://wa.me/573202301202" target="_blank">+57 320 2301202</a></p>
+        <p>📧 correo: <a href="mailto:paypal@milymunoz">paypal@milymunoz</a></p>
+      </div>
+    </section>
+  </main>
+
+  <aside id="cartDrawer" class="cart-drawer" aria-hidden="true">
+    <div class="cart-inner">
+      <h3>Carrito</h3>
+      <div id="cartItems"></div>
+      <div class="cart-actions">
+        <div id="cartTotal">Total: $0</div>
+        <button id="checkoutBtn" class="btn">Pagar</button>
+      </div>
     </div>
-  </section>
+  </aside>
 
-  <section id="products">
-    <h2>Productos</h2>
-    <div class="grid">
-      <div class="item"><img src="imagenes/Producto1.png" alt="Producto1"><h3>Producto 1</h3></div>
-      <div class="item"><img src="imagenes/Producto2.png" alt="Producto2"><h3>Producto 2</h3></div>
-      <div class="item"><img src="imagenes/Producto3.png" alt="Producto3"><h3>Producto 3</h3></div>
-      <div class="item"><img src="imagenes/Producto4.png" alt="Producto4"><h3>Producto 4</h3></div>
-      <div class="item"><img src="imagenes/Producto5.png" alt="Producto5"><h3>Producto 5</h3></div>
-      <div class="item"><img src="imagenes/Producto6.png" alt="Producto6"><h3>Producto 6</h3></div>
-      <div class="item"><img src="imagenes/Producto7.png" alt="Producto7"><h3>Producto 7</h3></div>
-      <div class="item"><img src="imagenes/Producto8.png" alt="Producto8"><h3>Producto 8</h3></div>
-      <div class="item"><img src="imagenes/Producto9.png" alt="Producto9"><h3>Producto 9</h3></div>
-    </div>
-  </section>
+  <div id="overlay" class="overlay" hidden></div>
 
-  <section id="agenda">
-    <h2>Agenda tu Cita</h2>
-    <form id="citaForm">
-      <input type="text" id="nombre" placeholder="Tu nombre" required>
-      <input type="email" id="correo" placeholder="Tu correo" required>
-      <input type="tel" id="telefono" placeholder="Tu número de celular" required>
-      <input type="date" id="fecha" required>
-      <input type="time" id="hora" required>
-      <button type="submit">Registrar Cita</button>
-    </form>
-  </section>
+  <div id="productModal" class="modal" hidden role="dialog" aria-modal="true"></div>
 
-  <section id="contact">
-    <h2>Contacto</h2>
-    <p>📲 WhatsApp: <a href="https://wa.me/573202301202" target="_blank">+57 320 2301202</a></p>
-    <p>📧 Correo: <a href="mailto:paypal@milymunoz">paypal@milymunoz</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Mily Muñoz</p>
+  <footer class="site-footer">
+    <p>“La magia no está fuera de ti, está dentro de ti.” — Mily Muñoz</p>
+    <p>&copy; 2025</p>
   </footer>
 
   <script src="script.js"></script>
